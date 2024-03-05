@@ -1,2 +1,15 @@
 # React Search App
- Basic React Search App, use the search field to filter the list of people by name & email address
+ React Search App used to filter the list of people by name & email address
+ 
+## Tech Stack
+
+- VS Code
+- React JS
+
+## Getting Started
+
+npm install
+
+## To Run
+
+npm start
