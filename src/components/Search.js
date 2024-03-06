@@ -25,8 +25,8 @@ export default function Search({details}) {
       };
     
       function searchList() {
-        return (          
-            <SearchList filteredPersons={filteredPersons} />          
+        return (                   
+          <SearchList filteredPersons={filteredPersons} />          
         );
       }    
 
