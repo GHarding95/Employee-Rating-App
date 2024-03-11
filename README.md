@@ -1,5 +1,5 @@
 # React Search App
- React Search App used to filter the list of people by name & email address
+ React Search App used to filter a list of people by name & email address
  
 ## Tech Stack
 
