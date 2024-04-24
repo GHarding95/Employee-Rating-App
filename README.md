@@ -1,5 +1,5 @@
-# React Search App
- React Search App used to filter a list of people by name & email address
+# React Redux Search App
+ React Redux Search App used to filter a list of people by name & email address and apply an employee rating of 1 - 10
  
 ## Tech Stack
 
