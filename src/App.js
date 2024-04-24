@@ -4,7 +4,7 @@ import React from "react";
 import Search from "./components/Search";
 import initialDetails from "./data/initialDetails";
 import { useSelector } from "react-redux";
-import { exportData } from "./utils/exportData"; // Import the exportData function
+import { exportData } from "./utils/exportData";
 import "../src/App.css";
 
 function App() {

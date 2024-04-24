@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from '../features/counter/counterSlice';
 
 export default function Cards({ person }) {
-  const rating = useSelector((state) => state.counter.ratingsMap[person.id]); // Accessing likes count from Redux store
+  const rating = useSelector((state) => state.counter.ratingsMap[person.id]);
   const dispatch = useDispatch();
 
   const handleIncrement = () => {

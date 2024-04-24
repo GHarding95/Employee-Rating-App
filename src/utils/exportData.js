@@ -1,5 +1,3 @@
-// utils/exportData.js
-
 export const exportData = (data) => {
     const jsonData = JSON.stringify(data);
     const blob = new Blob([jsonData], { type: "application/json" });
