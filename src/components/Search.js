@@ -8,14 +8,8 @@ export default function Search({details}) {
     const filteredPersons = details.filter(
         person => {
           return (
-            person
-            .name
-            .toLowerCase()
-            .includes(searchField.toLowerCase()) ||
-            person
-            .email
-            .toLowerCase()
-            .includes(searchField.toLowerCase())
+            person.name.toLowerCase().includes(searchField.toLowerCase()) ||
+            person.email.toLowerCase().includes(searchField.toLowerCase())
           );
         }
       );

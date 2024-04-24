@@ -5,6 +5,7 @@ const initialDetails = [
       name: "Jake Smith",
       email: "jake@smith.com",
       address: "New Delhi, India",
+      likes: 0,
     },
     {
       id: 2,
@@ -12,6 +13,7 @@ const initialDetails = [
       name: "Mary Rosamund",
       email: "mary@rosamund.com",
       address: "Tbilisi, India",
+      likes: 0,
     },
     {
       id: 3,
@@ -19,6 +21,7 @@ const initialDetails = [
       name: "Emma Williams",
       email: "emma@williams.com",
       address: "Baker Street, India",
+      likes: 0,
     },
     {
       id: 4,
@@ -26,6 +29,7 @@ const initialDetails = [
       name: "John Holmes",
       email: "john@holmes.com",
       address: "Mumbai, India",
+      likes: 0,
     },
     {
       id: 5,
@@ -33,6 +37,7 @@ const initialDetails = [
       name: "Sherlock Watson",
       email: "sherlock@watson.com",
       address: "Baker Street, India",
+      likes: 0,
     },
   ];
   

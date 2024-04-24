@@ -5,6 +5,7 @@
 
 - VS Code
 - React JS
+- Redux
 
 ## Getting Started
 
