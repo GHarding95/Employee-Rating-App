@@ -1,9 +1,8 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from '../features/counter/counterSlice';
-import '../css/Card.css';
 
-export default function Card({ person }) {
+export default function Cards({ person }) {
   const rating = useSelector((state) => state.counter.ratingsMap[person.id]); // Accessing likes count from Redux store
   const dispatch = useDispatch();
 
@@ -23,7 +22,7 @@ export default function Card({ person }) {
         <p>{person.email}</p>
         <p>{person.address}</p>
 
-<br/>
+        <br/>
 
         <h3>Employee Rating</h3>
 
