@@ -1,28 +1,23 @@
-import React, {useState} from 'react'
-import SearchList from './SearchList'
+import React, { useState } from 'react';
+import SearchList from './SearchList';
 
-export default function Search({details}) {
+export default function Search({ details }) {
+  const [searchField, setSearchField] = useState('');
 
-    const [searchField, setSearchField] = useState("");
+  const filteredPersons = details.filter((person) => {
+    return (
+      person.name.toLowerCase().includes(searchField.toLowerCase()) ||
+      person.email.toLowerCase().includes(searchField.toLowerCase())
+    );
+  });
 
-    const filteredPersons = details.filter(
-        person => {
-          return (
-            person.name.toLowerCase().includes(searchField.toLowerCase()) ||
-            person.email.toLowerCase().includes(searchField.toLowerCase())
-          );
-        }
-      );
-    
-      const handleChange = e => {
-        setSearchField(e.target.value);
-      };
-    
-      function searchList() {
-        return (                   
-          <SearchList filteredPersons={filteredPersons} />          
-        );
-      }    
+  const handleChange = (e) => {
+    setSearchField(e.target.value);
+  };
+
+  function searchList() {
+    return <SearchList filteredPersons={filteredPersons} />;
+  }
 
   return (
     <section className="garamond">
@@ -30,14 +25,14 @@ export default function Search({details}) {
         <h2 className="f2">Employee Rating App</h2>
       </div>
       <div className="pa2">
-        <input 
+        <input
           className="pa3 bb br3 grow b--none bg-lightest-blue ma3"
-          type = "search" 
-          placeholder = "Search People" 
-          onChange = {handleChange}
+          type="search"
+          placeholder="Search People"
+          onChange={handleChange}
         />
       </div>
       {searchList()}
     </section>
-  )
+  );
 }

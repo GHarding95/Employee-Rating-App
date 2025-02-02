@@ -7,11 +7,11 @@ export default function Cards({ person }) {
   const dispatch = useDispatch();
 
   const handleIncrement = () => {
-    dispatch(increment({id: person.id}));
+    dispatch(increment({ id: person.id }));
   };
 
   const handleDecrement = () => {
-    dispatch(decrement({id: person.id}));
+    dispatch(decrement({ id: person.id }));
   };
 
   return (
@@ -22,20 +22,17 @@ export default function Cards({ person }) {
         <p>{person.email}</p>
         <p>{person.address}</p>
 
-        <br/>
-
         <h3>Employee Rating</h3>
 
-        <div className='flex'>
-        <button aria-label="Decrement value" onClick={handleDecrement}>
+        <div className="rating-container">
+          <button aria-label="Decrement value" onClick={handleDecrement}>
             -
           </button>
-            <p>{rating}</p>
+          <p>{rating}</p>
           <button aria-label="Increment value" onClick={handleIncrement}>
             +
           </button>
         </div>
-
       </div>
     </div>
   );

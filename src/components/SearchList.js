@@ -1,13 +1,10 @@
-import React from 'react'
-import Cards from './Cards'
+import React from 'react';
+import Cards from './Cards';
 
-export default function SearchList({filteredPersons}) {
+export default function SearchList({ filteredPersons }) {
+  const filtered = filteredPersons.map((person) => (
+    <Cards key={person.id} person={person} />
+  ));
 
-    const filtered = filteredPersons.map(person => <Cards key={person.id} person={person}/>)
-
-  return (
-    <div className='flex'>
-      {filtered}
-    </div>
-  )
+  return <div className="flex">{filtered}</div>;
 }
