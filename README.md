@@ -1,5 +1,5 @@
 # Employee Rating App - React/Redux
- Employee Rating App used to filter a list of people by name & email address and apply an employee rating of 1 - 10, data can then be exported to JSON file
+ Employee Rating App used to filter a list of people by name & email address and apply an employee rating of 1 - 10, data can then be exported to JSON file. Made using React JS and Redux.
  
 ## Tech Stack
 
