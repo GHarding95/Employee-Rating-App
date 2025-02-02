@@ -27,7 +27,7 @@ export default function Search({details}) {
   return (
     <section className="garamond">
       <div className="navy georgia ma0 grow">
-        <h2 className="f2">React Search App</h2>
+        <h2 className="f2">Employee Rating App</h2>
       </div>
       <div className="pa2">
         <input 
