@@ -1,9 +1,14 @@
-import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from '../features/counter/counterSlice';
+import { Person } from '../data/initialDetails';
+import { RootState } from '../app/store'; // Correct import
 
-export default function Cards({ person }) {
-  const rating = useSelector((state) => state.counter.ratingsMap[person.id]);
+interface CardsProps {
+  person: Person;
+}
+
+export default function Cards({ person }: CardsProps) {
+  const rating = useSelector((state: RootState) => state.counter.ratingsMap[person.id]);
   const dispatch = useDispatch();
 
   const handleIncrement = () => {

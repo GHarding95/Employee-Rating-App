@@ -1,7 +1,11 @@
-import React from 'react';
 import Cards from './Cards';
+import { Person } from '../data/initialDetails';
 
-export default function SearchList({ filteredPersons }) {
+interface SearchListProps {
+    filteredPersons: Person[];
+}
+
+export default function SearchList({ filteredPersons }: SearchListProps) {
   const filtered = filteredPersons.map((person) => (
     <Cards key={person.id} person={person} />
   ));

@@ -1,14 +1,12 @@
-// App.js
-
-import React from "react";
 import Search from "./components/Search";
 import initialDetails from "./data/initialDetails";
 import { useSelector } from "react-redux";
 import { exportData } from "./utils/exportData";
 import "../src/App.css";
+import { RootState } from "./app/store";
 
 function App() {
-  const counterState = useSelector((state) => state.counter);
+  const counterState = useSelector((state: RootState) => state.counter);
 
   // Function to handle export button click
   const handleExportClick = () => {

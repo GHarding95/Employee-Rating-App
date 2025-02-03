@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import SearchList from './SearchList';
+import { Person } from '../data/initialDetails';
 
-export default function Search({ details }) {
+interface SearchProps {
+    details: Person[];
+}
+
+export default function Search({ details }: SearchProps) {
   const [searchField, setSearchField] = useState('');
 
   const filteredPersons = details.filter((person) => {
@@ -11,7 +16,7 @@ export default function Search({ details }) {
     );
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchField(e.target.value);
   };
 
